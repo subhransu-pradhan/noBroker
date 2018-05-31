@@ -1,4 +1,4 @@
-package com.nobroker.VendingMachine.bo;
+package com.nobroker.vendingMachine.bo;
 
 public class Product {
     private String name;

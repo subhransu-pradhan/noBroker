@@ -1,9 +1,9 @@
-package com.nobroker.VendingMachine.dao.impl;
+package com.nobroker.vendingMachine.dao.impl;
 
-import com.nobroker.VendingMachine.bo.Product;
-import com.nobroker.VendingMachine.bo.VendingMachine;
-import com.nobroker.VendingMachine.dao.ProductDaoSupplier;
-import com.nobroker.VendingMachine.dao.ProductsDaoCustomer;
+import com.nobroker.vendingMachine.bo.Product;
+import com.nobroker.vendingMachine.bo.VendingMachine;
+import com.nobroker.vendingMachine.dao.ProductDaoSupplier;
+import com.nobroker.vendingMachine.dao.ProductsDaoCustomer;
 
 public class ProductDaoImpl implements ProductsDaoCustomer, ProductDaoSupplier {
 

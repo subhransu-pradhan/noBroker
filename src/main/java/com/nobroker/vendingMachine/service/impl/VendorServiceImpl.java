@@ -1,12 +1,12 @@
-package com.nobroker.VendingMachine.service.impl;
+package com.nobroker.vendingMachine.service.impl;
 
-import com.nobroker.VendingMachine.bo.Product;
-import com.nobroker.VendingMachine.dao.WalletDao;
-import com.nobroker.VendingMachine.dao.impl.WalletDaoImpl;
-import com.nobroker.VendingMachine.bo.Coin;
-import com.nobroker.VendingMachine.dao.ProductsDaoCustomer;
-import com.nobroker.VendingMachine.dao.impl.ProductDaoImpl;
-import com.nobroker.VendingMachine.service.VendorService;
+import com.nobroker.vendingMachine.bo.Product;
+import com.nobroker.vendingMachine.dao.WalletDao;
+import com.nobroker.vendingMachine.dao.impl.WalletDaoImpl;
+import com.nobroker.vendingMachine.bo.Coin;
+import com.nobroker.vendingMachine.dao.ProductsDaoCustomer;
+import com.nobroker.vendingMachine.dao.impl.ProductDaoImpl;
+import com.nobroker.vendingMachine.service.VendorService;
 
 import java.util.Map;
 

@@ -1,6 +1,6 @@
-package com.nobroker.VendingMachine.controller;
+package com.nobroker.vendingMachine.controller;
 
-import com.nobroker.VendingMachine.bo.Product;
+import com.nobroker.vendingMachine.bo.Product;
 
 public interface SupplierController {
     public void addProduct(String code, Product product);

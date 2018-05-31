@@ -1,6 +1,6 @@
-package com.nobroker.VendingMachine.dao;
+package com.nobroker.vendingMachine.dao;
 
-import com.nobroker.VendingMachine.bo.Coin;
+import com.nobroker.vendingMachine.bo.Coin;
 
 import java.util.Map;
 

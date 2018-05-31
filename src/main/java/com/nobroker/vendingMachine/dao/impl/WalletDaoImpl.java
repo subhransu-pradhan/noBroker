@@ -1,8 +1,8 @@
-package com.nobroker.VendingMachine.dao.impl;
+package com.nobroker.vendingMachine.dao.impl;
 
-import com.nobroker.VendingMachine.bo.VendingMachine;
-import com.nobroker.VendingMachine.dao.WalletDao;
-import com.nobroker.VendingMachine.bo.Coin;
+import com.nobroker.vendingMachine.bo.VendingMachine;
+import com.nobroker.vendingMachine.dao.WalletDao;
+import com.nobroker.vendingMachine.bo.Coin;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.nobroker.VendingMachine;
+package com.nobroker.vendingMachine;
 
 public class Supplier extends User{
 

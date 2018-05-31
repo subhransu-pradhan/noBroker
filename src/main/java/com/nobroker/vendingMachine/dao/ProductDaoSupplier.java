@@ -1,6 +1,6 @@
-package com.nobroker.VendingMachine.dao;
+package com.nobroker.vendingMachine.dao;
 
-import com.nobroker.VendingMachine.bo.Product;
+import com.nobroker.vendingMachine.bo.Product;
 
 public interface ProductDaoSupplier {
     public void addProduct(String code, Product product);

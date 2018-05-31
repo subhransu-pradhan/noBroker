@@ -1,7 +1,7 @@
-package com.nobroker.VendingMachine.service;
+package com.nobroker.vendingMachine.service;
 
-import com.nobroker.VendingMachine.bo.Product;
-import com.nobroker.VendingMachine.bo.Coin;
+import com.nobroker.vendingMachine.bo.Product;
+import com.nobroker.vendingMachine.bo.Coin;
 
 import java.util.Map;
 

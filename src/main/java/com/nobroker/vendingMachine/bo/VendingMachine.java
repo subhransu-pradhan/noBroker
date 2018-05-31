@@ -1,4 +1,4 @@
-package com.nobroker.VendingMachine.bo;
+package com.nobroker.vendingMachine.bo;
 
 import java.util.HashMap;
 import java.util.Map;
