@@ -13,10 +13,10 @@ public class VendingMachine {
 
     private VendingMachine() {
         products = new HashMap<String, Product>();
-        this.addProduct("A1", new Product("CocaCola", 25) );
-        this.addProduct("A2", new Product("Pepsi", 15));
-        this.addProduct("A3", new Product("7UP", 20));
-        this.addProduct("A4", new Product("Sprit", 10));
+        this.addProduct("A1", new Product("CocaCola", 25, 5) );
+        this.addProduct("A2", new Product("Pepsi", 15, 5));
+        this.addProduct("A3", new Product("7UP", 20, 5));
+        this.addProduct("A4", new Product("Sprit", 10,5));
 
 
         this.addCoins(Coin.getInstance(25), 50);
@@ -62,9 +62,16 @@ public class VendingMachine {
 
     public Product getProduct(String code){
         Product product = products.get(code);
+        if(product == null){
+            throw new RuntimeException("Product not Found.");
+        }
         if(product.getQuantity() > 1)
         {
             product.setQuantity(product.getQuantity()-1);
+        }
+        else
+        {
+            throw new RuntimeException("Product is not Available.");
         }
         return product;
     }
