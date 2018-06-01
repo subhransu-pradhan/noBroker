@@ -50,12 +50,12 @@ public class GenerateVehicleNumber {
         sequence += Integer.parseInt(new String(temp));
         return sequence;
     }
-
+/*
     public static void main(String args[]) {
 
         String currentNumber = "KA51AA0000";
         int nextCount = 0;
 
         System.out.println(getNumber(returnSequenceNumber(currentNumber) + nextCount));
-    }
+    }*/
 }

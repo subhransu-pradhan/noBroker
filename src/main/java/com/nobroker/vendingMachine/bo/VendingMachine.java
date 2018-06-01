@@ -18,12 +18,11 @@ public class VendingMachine {
         this.addProduct("A3", new Product("7UP", 20, 5));
         this.addProduct("A4", new Product("Sprit", 10,5));
 
-
-        this.addCoins(Coin.getInstance(25), 50);
-        this.addCoins(Coin.getInstance(20), 50);
-        this.addCoins(Coin.getInstance(10), 50);
-        this.addCoins(Coin.getInstance(5), 50);
-        this.addCoins(Coin.getInstance(1), 50);
+        this.coins.put(Coin.getInstance(25), 50);
+        this.coins.put(Coin.getInstance(20), 50);
+        this.coins.put(Coin.getInstance(10), 50);
+        this.coins.put(Coin.getInstance(5), 50);
+        this.coins.put(Coin.getInstance(1), 50);
     }
 
     public long getTotalDeposit() {
@@ -48,16 +47,23 @@ public class VendingMachine {
 
     public void addCoins(Coin coin, int quantity) {
         totalDeposit = totalDeposit + coin.getValue() * quantity;
-        this.coins.put(coin, this.coins.get(coin) + quantity);
+        if(this.coins.get(coin) == null)
+            this.coins.put(coin, quantity);
+        else
+            this.coins.put(coin, this.coins.get(coin) + quantity);
     }
 
     public void addProduct(String code, Product product){
         Product productToAdd = products.get(code);
         if(productToAdd == null)
-            products.put(code, product);
+            productToAdd = product;
         else
-            productToAdd.setQuantity(product.getQuantity() + product.getQuantity());
+            productToAdd.setQuantity(product.getQuantity() + productToAdd.getQuantity());
         products.put(code, productToAdd);
+    }
+
+    public Map<String, Product> getProducts() {
+        return products;
     }
 
     public Product getProduct(String code){

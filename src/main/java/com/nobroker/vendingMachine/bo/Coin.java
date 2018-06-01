@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Coin {
     private int value;
-    private static final List<Integer> values = Arrays.asList(1,5,10,25);
+    private static final List<Integer> values = Arrays.asList(1,5,10,20,25);
     private static Map<Integer, Coin> coins = new HashMap<>(5);
 
     private Coin(int value) {

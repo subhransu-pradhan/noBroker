@@ -36,7 +36,7 @@ public class sumOfThreeElement {
             }
         }
     }
-
+/*
     public static void main(String[] args)
     {
         sumOfThreeElement find = new sumOfThreeElement();
@@ -44,5 +44,5 @@ public class sumOfThreeElement {
         int n = A.length;
         int X = 6;
         find.find3Numbers(A, n, X);
-    }
+    }*/
 }
